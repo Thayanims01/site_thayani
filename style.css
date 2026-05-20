@@ -12,35 +12,35 @@ body{/*alterando alinhamneto do corpo da pagina*/
     background-color:#fcfcfc;
 }
 header{
-color:#ffffff;
+color:#f8930f;
 padding: 20px;
-background-color:#808080 ;
+background-color:#ddc74d ;
 font-family: 'Power of Dragon';/*ele coloca sua fonte,Mas precisa ir no import url segurar ctrl e clica*/
 }
 /*Alterando estilo do cabeçalho*/
 nav a{
     text-decoration: none;/*ele tira a decoração do meu texto*/
-    color: aliceblue;/*muda a cor da fonte*/
+    color: rgb(224, 157, 11);/*muda a cor da fonte*/
     display: inline-block;/*chamar o display de ativar, E deixa os itens lado a lado*/
     margin: 15px;/*aumentar a margem do boco*/
     padding: 10px 20px;/*aumentar espçamento interno*/
-    background-color: #433c69;
+    background-color: #d5d68e;
     border-radius: 10px;
 }
 nav a:hover{
-    background-color:#fcfaeb;
-    color:#000000;
+    background-color:#eedb49;
+    color:#fdfdf7;
     font-size:20px;
 }
 nav{
-    background-color: rgb(87, 66, 114);
+    background-color: rgb(233, 211, 86);
     
 }
 .card{/*article dos card de personagens*/
     display:inline-block;
     width: 250px;
     margin: 15px;
-    background-color: rgb(137, 108, 163);
+    background-color: rgb(236, 207, 76);
     border-radius: 10px;
     text-align: center;
 }
@@ -53,7 +53,7 @@ nav{
  
 #personagens{
 
-    background-image: url(./imagens/banner.jpg);
+    background-image: url(./imagens/bann.jpg);
     background-size: cover;
     background-position: center;
     
@@ -62,26 +62,53 @@ nav{
     não repetir a imagem varias vezes - background - repeat:no repeat
     mudar pocisão da imagem - background - position center*/
 }
-personagens h2{
+#personagens h2{
     font-family: 'Power of Dragon';/*alterar fonte h2*/
-    color: antiquewhite;
+    color: rgb(243, 152, 33);
     padding: 20px;
+    
 }
 
-#temporadas{
+/* SEÇÃO MELHORES TEMPORADAS */
+#melhores-temporadas{
     margin-top: 30px;
-    background-color: red;
-}
-.lutas{
-    display: inline-block;/*ativar o dsiplay para os cards*/
-    width: 560px;
-    height: 300px;
-    border-radius: 10px;
-    padding-top: 20px;  
-    background-color: rgb(241, 41, 41);
-}
-.temporas img{
-    width: 500%;
-border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 
 }
+
+/* cards */
+.temporadas,
+.lutas,
+.emocionantes{
+    width: 300px;
+    background-color: rgb(241, 194, 41);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* imagens */
+.temporadas img,
+.lutas img,
+.emocionantes img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#melhores-temporadas h2{
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(238, 165, 8);
+}
+footer{
+    color: #ffcc00; /* escolhe a cor */
+    background-color: #3f4747; /* opcional: fundo do rodapé */
+    padding: 15px;
+    font-size: 30px;
+}
+    
+    
